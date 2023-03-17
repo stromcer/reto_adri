@@ -1,13 +1,10 @@
 import React from "react";
 
-const Listltem = ({children }) => {
+const ListItem = ({children }) => {
 
     return (
-        <ul class="list-group">
-           {children}
-        </ul>
-
+               <li class="list-group-item">{children}</li>
     )
 }
 
-export default Listltem
+export default ListItem
