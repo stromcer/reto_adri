@@ -4,9 +4,9 @@ import Checkbox from "./Checkbox";
 
 const Options = () => {
 
-    const [labelOneChecked, setLabelOneChecked] = useState(False)
-    const [labelTwoChecked, setLabelTwoChecked] = useState(False)
-    const [labelThreeChecked, setLabelThreeChecked] = useState(False)
+    const [labelOneChecked, setLabelOneChecked] = useState(false)
+    const [labelTwoChecked, setLabelTwoChecked] = useState(false)
+    const [labelThreeChecked, setLabelThreeChecked] = useState(false)
 
 
 

@@ -10,7 +10,7 @@ const Checkbox = ({initiallyChecked, label}) => {
 
     return (
         <>  
-            <input onClick={handleclick}  type="checkbox" id="vehicle1" name="vehicle1" value="Bike" { checked ? "checked" : null }/>
+            <input onClick={handleclick}  type="checkbox" id="vehicle1" name="vehicle1" value="Bike"/>
             <label for="vehicle1"> {label} </label><br />
         </>
     )
