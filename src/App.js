@@ -14,8 +14,9 @@ function App() {
     <BrowserRouter>
     <Navbar/>
     <Routes>
-      <Route path="/" element=<Main/>/>
-      <Route path="/my-passwords" element=<MyPasswords/>/>
+      <Route path="/" element={<Main/>} />
+
+      <Route path="/my-passwords" element={<MyPasswords/>} />
 
     </Routes>
     </BrowserRouter>

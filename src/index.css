@@ -17,3 +17,7 @@ code {
 .heroContainer{
   background-image: url("https://cdn.pixabay.com/photo/2014/05/27/23/32/matrix-356024_960_720.jpg")
 }
+
+.heroContainer h1,.heroContainer p{
+  color:white;
+}

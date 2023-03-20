@@ -5,7 +5,7 @@ import Options from "./Options"
 
 const Main=()=> {
     return (
-        <><Hero />
+        <><Hero tittle="Home" subTittle="Pues el home pa que le des click"/>
         <Options /></>
     )
 }
