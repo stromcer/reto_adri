@@ -1,51 +1,16 @@
 import React, {useState} from "react";
 import Checkbox from "./Checkbox";
-import {defaultList , mayusList ,numberList ,signList} from "./Listas.js"
 
+
+import useStore from "./Context";
 
 
 
 
 const Options = () => {
-
-    const [labelOneChecked, setLabelOneChecked] = useState(false)
-    const [labelTwoChecked, setLabelTwoChecked] = useState(false)
-    const [labelThreeChecked, setLabelThreeChecked] = useState(false)
-    const [currentPassword, setCurrentPassword] = useState("")
-
-    const handleNewPassword = () => {
-        let newPassword = ""
-        let listaUsada = getCharacter()
-        for(let i=0; i<=12 ; i++ ){
-            newPassword += listaUsada[Math.floor(Math.random()*(listaUsada.length-1))]
-        }
-        setCurrentPassword(newPassword)
-
-    }
-
-    const getCharacter = () => {
-        let array = [...defaultList];
-        array = labelOneChecked ? array.concat(mayusList) : array ;
-        array = labelTwoChecked ? array.concat(numberList) : array ;
-        array = labelThreeChecked ? array.concat(signList) : array ;
-        return array
-    }
-
-    const handleFirst = () => {
-        setLabelOneChecked(prev => !prev)
-    } 
-
-    const handleSecond = () => {
-        console.log("HOLA")
-        setLabelTwoChecked(prev => !prev)
-    } 
-
-    const handleThird = () => {
-        setLabelThreeChecked(prev => !prev)
-    } 
-
-
-
+const store = useStore()
+const {handleNewPassword, handleFirst, handleSecond, handleThird } = store.actions 
+const {labelOneChecked,labelTwoChecked,labelThreeChecked,currentPassword } = store.store
 
 
     return(
